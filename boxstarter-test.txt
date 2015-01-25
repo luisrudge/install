@@ -1,0 +1,48 @@
+# Boxstarter options
+$Boxstarter.RebootOk=$true # Allow reboots?
+$Boxstarter.NoPassword=$false # Is this a machine with no login password?
+$Boxstarter.AutoLogin=$true # Save my password securely and auto-login after a reboot
+
+# Basic setup
+Update-ExecutionPolicy Unrestricted
+Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowFileExtensions -EnableShowFullPathInTitleBar
+Enable-RemoteDesktop
+Disable-InternetExplorerESC
+Disable-UAC
+
+#reboot to save password right away
+Invoke-Reboot
+
+#apps
+choco install cmder
+choco install atom
+choco install nodejs.install
+choco install git.install
+
+#install iis
+choco install IIS-WebServerRole -source windowsfeatures
+choco install IIS-HttpCompressionDynamic -source windowsfeatures
+choco install IIS-ASPNET45 -source windowsfeatures
+
+#fix npm bug
+New-Item -path "$env:APPDATA\npm" -type directory -force
+
+#install packages
+npm install -g bower gulp ionic karma-cli yo typescript
+apm install atom-beautify atom-typescript-tools bezier-curve-editor color-picker css-snippets editorconfig emmet language-csharp autocomplete-plus-async omnisharp-atom language-cshtml language-css-plus language-typescript less-than-slash linter-tslint seti-syntax seti-ui
+
+#create git folder
+New-Item -path "C:\git" -type directory -force
+
+#add aliases to cmder
+Get-ChocolateyWebFile 'cmder_aliases' "C:\tools\cmder\config\aliases" 'https://raw.githubusercontent.com/luisrudge/my-boxstarter-script/master/cmder/aliases'
+
+#git config
+git config --global push.default simple
+git config --global user.name "Luis Rudge"
+git config --global user.email "luis@luisrudge.net"
+
+# Update Windows and reboot if necessary
+# Install-WindowsUpdate -AcceptEula
+
+Invoke-Reboot
