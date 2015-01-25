@@ -10,9 +10,6 @@ Enable-RemoteDesktop
 Disable-InternetExplorerESC
 Disable-UAC
 
-#reboot to save password right away
-Invoke-Reboot
-
 #apps
 choco install googlechrome
 choco install 7zip.install
