@@ -42,12 +42,15 @@ choco install grepWin
 choco install clipx
 choco install git.install
 choco install CloudBerryExplorer.AzureStorage
-choco install PngGauntlet
 choco install utorrent
 
 #install iis
 choco install IIS-WebServerRole -source windowsfeatures
 choco install IIS-HttpCompressionDynamic -source windowsfeatures
+choco install NetFx4Extended-ASPNET45
+choco install IIS-ISAPIFilter
+choco install IIS-ISAPIExtensions
+choco install IIS-NetFxExtensibility45
 choco install IIS-ASPNET45 -source windowsfeatures
 
 #fix npm bug
