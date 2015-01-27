@@ -47,10 +47,10 @@ choco install utorrent
 #install iis
 choco install IIS-WebServerRole -source windowsfeatures
 choco install IIS-HttpCompressionDynamic -source windowsfeatures
-choco install NetFx4Extended-ASPNET45
-choco install IIS-ISAPIFilter
-choco install IIS-ISAPIExtensions
-choco install IIS-NetFxExtensibility45
+choco install NetFx4Extended-ASPNET45 -source windowsfeatures
+choco install IIS-ISAPIFilter -source windowsfeatures
+choco install IIS-ISAPIExtensions -source windowsfeatures
+choco install IIS-NetFxExtensibility45 -source windowsfeatures
 choco install IIS-ASPNET45 -source windowsfeatures
 
 #fix npm bug
