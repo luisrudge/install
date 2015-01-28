@@ -11,3 +11,5 @@ https://github.com/settings/ssh
 https://bitbucket.org/account/user/luisrudge/ssh-keys/
 
 [Install other stuff](http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/luisrudge/my-boxstarter-script/master/run-2.txt)
+
+http://netdev.co.za/blog/the-case-for-better-io-in-resharper/
