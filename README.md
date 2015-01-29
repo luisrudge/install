@@ -20,7 +20,7 @@ http://netdev.co.za/blog/the-case-for-better-io-in-resharper/
 
 #troubleshooting
 
-```bash
+```
 C:\tools\cmder\vendor\msysgit\bin\ls.exe: *** Couldn't reserve space for cygwin's heap, Win32 error 0
 
 cd c:\tools\cmder\vendor\msysgit\bin
