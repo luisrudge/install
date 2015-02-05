@@ -33,7 +33,7 @@ apm install atom-beautify atom-typescript-tools bezier-curve-editor color-picker
 New-Item -path "C:\git" -type directory -force
 
 #add aliases to cmder
-Get-ChocolateyWebFile 'cmder_aliases' "C:\tools\cmder\config\aliases" 'https://raw.githubusercontent.com/luisrudge/my-boxstarter-script/master/cmder/aliases'
+Get-ChocolateyWebFile 'cmder_aliases' "C:\tools\cmder\config\aliases" 'https://raw.githubusercontent.com/luisrudge/install-scripts/master/windows/cmder/aliases'
 
 #git config
 git config --global push.default simple

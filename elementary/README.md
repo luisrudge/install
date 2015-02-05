@@ -1,0 +1,1 @@
+# elementaryos install script
