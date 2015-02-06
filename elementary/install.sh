@@ -58,6 +58,7 @@ cd libuv-v1.0.2/
 sudo ./gyp_uv.py -f make -Duv_library=shared_library
 sudo make -C out
 sudo make install
+sudo ldconfig
 
 #aspnet
 echo "aspnet5"
