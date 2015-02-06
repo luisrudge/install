@@ -92,6 +92,12 @@ apm install less-than-slash
 apm install linter-tslint
 apm install seti-syntax
 apm install seti-ui
+apm install git-control
+apm install minimap
+apm install sync-settings
+apm install git-tab-status
+apm install tab-smart-sort
+apm install sublime-tabs
 
 #versions
 echo "versions"
