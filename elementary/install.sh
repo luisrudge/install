@@ -57,8 +57,7 @@ tar -xvf libuv-v1.0.2.tar.gz
 cd libuv-v1.0.2/
 sudo ./gyp_uv.py -f make -Duv_library=shared_library
 sudo make -C out
-sudo cp out/Debug/lib.target/libuv.so /usr/lib/libuv.so.1.0.2
-sudo ln -s libuv.so.1.0.2 /usr/lib/libuv.so.1
+sudo make install
 
 #aspnet
 echo "aspnet5"
