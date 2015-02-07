@@ -62,6 +62,7 @@ sh autogen.sh
 make
 make check
 sudo make install
+sudo ln -s /usr/local/lib/libuv.so /usr/lib/libuv.so.1
 sudo ldconfig
 
 #aspnet
