@@ -52,11 +52,15 @@ npm i -g gulp grunt-cli yo karma-cli typescript bower
 #libuv
 echo "setup libuv"
 sudo apt-get -y install gyp automake make libtool
-wget http://libuv.org/dist/v1.0.2/libuv-v1.0.2.tar.gz
-tar -xvf libuv-v1.0.2.tar.gz
-cd libuv-v1.0.2/
-sudo ./gyp_uv.py -f make -Duv_library=shared_library
-sudo make -C out
+cd ~/
+mkdir utils
+cd utils
+git clone https://github.com/libuv/libuv.git
+cd libuv
+sh autogen.sh
+./configure
+make
+make check
 sudo make install
 sudo ldconfig
 
