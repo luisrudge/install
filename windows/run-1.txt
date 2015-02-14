@@ -27,13 +27,7 @@ New-Item -path "$env:APPDATA\npm" -type directory -force
 
 #install packages
 npm install -g bower gulp ionic karma-cli yo typescript
-apm install atom-beautify atom-typescript-tools bezier-curve-editor color-picker css-snippets editorconfig emmet language-csharp autocomplete-plus-async omnisharp-atom language-cshtml language-css-plus language-typescript less-than-slash linter-tslint seti-syntax seti-ui
-apm install git-control
-apm install minimap
-apm install sync-settings
-apm install git-tab-status
-apm install tab-smart-sort
-apm install sublime-tabs
+apm install atom-beautify atom-typescript-tools bezier-curve-editor color-picker css-snippets editorconfig emmet autocomplete-plus omnisharp-atom language-cshtml language-css-plus language-typescript less-than-slash linter-tslint seti-syntax seti-ui minimap
 
 #create git folder
 New-Item -path "C:\git" -type directory -force
