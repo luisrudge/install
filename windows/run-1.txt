@@ -5,6 +5,27 @@ Enable-RemoteDesktop
 Disable-InternetExplorerESC
 Disable-UAC
 
+Write-BoxstarterMessage "Setting Windows power plan to High performance"
+$guid = (Get-WmiObject -Class win32_powerplan -Namespace root\cimv2\power -Filter "ElementName='High performance'").InstanceID.tostring()
+$regex = [regex]"{(.*?)}$"
+$newpowerVal = $regex.Match($guid).groups[1].value
+powercfg -S $newpowerVal
+
+Write-BoxstarterMessage "Setting Standby Timeout to Never"
+powercfg -change -standby-timeout-ac 0
+powercfg -change -standby-timeout-dc 10
+
+Write-BoxstarterMessage "Setting Monitor Timeout to Never"
+powercfg -change -monitor-timeout-ac 3
+powercfg -change -monitor-timeout-dc 1
+
+Write-BoxstarterMessage "Setting Disk Timeout to Never"
+powercfg -change -disk-timeout-ac 0
+powercfg -change -disk-timeout-dc 15
+
+Write-BoxstarterMessage "Turning off Windows Hibernation"
+powercfg -h off
+
 #apps
 choco install googlechrome
 choco install cmder
@@ -12,6 +33,12 @@ choco install nodejs.install
 choco install atom
 choco install 7zip.install
 choco install git.install
+
+#extra
+choco install greenshot
+choco install zoomit
+choco install wget
+choco install curl
 
 #install iis
 choco install IIS-WebServerRole -source windowsfeatures
@@ -27,7 +54,7 @@ New-Item -path "$env:APPDATA\npm" -type directory -force
 
 #install packages
 npm install -g bower gulp ionic karma-cli yo typescript
-apm install atom-beautify atom-typescript-tools bezier-curve-editor color-picker css-snippets editorconfig emmet autocomplete-plus omnisharp-atom language-cshtml language-css-plus language-typescript less-than-slash linter-tslint seti-syntax seti-ui minimap
+apm install atom-beautify atom-typescript-tools bezier-curve-editor color-picker css-snippets editorconfig emmet autocomplete-plus omnisharp-atom language-cshtml language-css-plus language-typescript less-than-slash linter-tslint seti-syntax seti-ui minimap atom-save-all
 
 #create git folder
 New-Item -path "C:\git" -type directory -force
@@ -39,3 +66,5 @@ Get-ChocolateyWebFile 'cmder_aliases' "C:\tools\cmder\config\aliases" 'https://r
 git config --global push.default simple
 git config --global user.name "Luis Rudge"
 git config --global user.email "luis@luisrudge.net"
+
+Enable-UAC
