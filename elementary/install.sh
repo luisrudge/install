@@ -69,7 +69,7 @@ sudo ldconfig
 echo "aspnet5"
 wget https://raw.githubusercontent.com/aspnet/Home/master/kvminstall.sh
 sh kvminstall.sh
-source ~/.kre/kvm/kvm.sh
+source ~/.k/kvm/kvm.sh
 kvm upgrade
 
 #atom
