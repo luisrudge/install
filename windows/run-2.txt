@@ -1,5 +1,3 @@
-Install-WindowsUpdate -AcceptEula
-
 #apps
 choco install fiddler4
 choco install ccleaner
