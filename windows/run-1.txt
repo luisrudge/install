@@ -64,7 +64,7 @@ New-Item -path "C:\git" -type directory -force
 Get-ChocolateyWebFile 'cmder_aliases' "C:\tools\cmder\config\aliases" 'https://raw.githubusercontent.com/luisrudge/install-scripts/master/windows/cmder/aliases'
 
 #git config
-git config --global push.default simple
+git config --global push.default current
 git config --global user.name "Luis Rudge"
 git config --global user.email "luis@luisrudge.net"
 
