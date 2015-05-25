@@ -59,6 +59,8 @@ apm install atom-beautify atom-color-highlight atom-save-all atom-yeoman bezier-
 
 #create git folder
 New-Item -path "C:\git" -type directory -force
+New-Item -path "C:\git\oss" -type directory -force
+New-Item -path "C:\git\rr" -type directory -force
 
 #add aliases to cmder
 Get-ChocolateyWebFile 'cmder_aliases' "C:\tools\cmder\config\aliases" 'https://raw.githubusercontent.com/luisrudge/install/master/windows/cmder/aliases'
