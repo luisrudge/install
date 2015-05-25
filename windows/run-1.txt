@@ -55,13 +55,13 @@ New-Item -path "$env:APPDATA\npm" -type directory -force
 
 #install packages
 npm install -g bower gulp ionic karma-cli yo typescript
-apm install atom-beautify atom-typescript-tools bezier-curve-editor color-picker css-snippets editorconfig emmet autocomplete-plus omnisharp-atom language-cshtml language-css-plus language-typescript less-than-slash linter-tslint seti-syntax seti-ui minimap atom-save-all
+apm install atom-beautify atom-color-highlight atom-save-all atom-yeoman bezier-curve-editor color-picker emmet jshint language-docker linter omnisharp-atom react tool-bar tool-bar-main editorconfig less-than-slash
 
 #create git folder
 New-Item -path "C:\git" -type directory -force
 
 #add aliases to cmder
-Get-ChocolateyWebFile 'cmder_aliases' "C:\tools\cmder\config\aliases" 'https://raw.githubusercontent.com/luisrudge/install-scripts/master/windows/cmder/aliases'
+Get-ChocolateyWebFile 'cmder_aliases' "C:\tools\cmder\config\aliases" 'https://raw.githubusercontent.com/luisrudge/install/master/windows/cmder/aliases'
 
 #git config
 git config --global push.default current
