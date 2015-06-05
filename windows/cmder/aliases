@@ -12,3 +12,6 @@ gpull=git pull --rebase --prune
 aliases=cat C:\tools\cmder\config\aliases
 oss=cd c:\git\oss\
 rr=cd c:\git\rr\
+apmu=apm upgrade -c=false
+npml=npm list -g --depth=0
+npmu=npm-check-updates $*
