@@ -55,7 +55,7 @@ New-Item -path "$env:APPDATA\npm" -type directory -force
 
 #install packages
 npm i -g bower generator-aspnet gulp http-server karma-cli npm-check-updates typescript webpack webpack-dev-server
-apm install atom-beautify atom-color-highlight atom-save-all atom-yeoman bezier-curve-editor color-picker emmet jshint language-docker linter omnisharp-atom react tool-bar tool-bar-main editorconfig less-than-slash
+apm install atom-beautify pigments atom-save-all atom-yeoman bezier-curve-editor color-picker emmet jshint language-docker linter omnisharp-atom react tool-bar tool-bar-main editorconfig less-than-slash
 
 #create git folder
 New-Item -path "C:\git" -type directory -force
