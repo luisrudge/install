@@ -80,7 +80,7 @@ cd atom
 wget https://github.com/atom/atom/releases/download/v0.177.0/atom-amd64.deb
 sudo dpkg --install atom-amd64.deb
 
-apm install atom-beautify atom-typescript-tools bezier-curve-editor color-picker css-snippets editorconfig emmet autocomplete-plus omnisharp-atom language-cshtml language-css-plus language-typescript less-than-slash linter-tslint seti-syntax seti-ui minimap atom-save-all
+apm install atom-beautify pigments atom-save-all atom-yeoman bezier-curve-editor color-picker emmet jshint language-docker linter omnisharp-atom react tool-bar tool-bar-main editorconfig less-than-slash
 
 #versions
 echo "versions"
