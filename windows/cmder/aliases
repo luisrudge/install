@@ -10,8 +10,13 @@ gs=git status -s
 gcb=git checkout -b $*
 gpull=git pull --rebase --prune
 aliases=cat C:\tools\cmder\config\aliases
+editalias=notepad C:\tools\cmder\config\aliases
 oss=cd c:\git\oss\
 rr=cd c:\git\rr\
 apmu=apm upgrade -c=false
 npml=npm list -g --depth=0
 npmu=npm-check-updates $*
+sfstart=@powershell -File "C:\Program Files\Microsoft SDKs\Service Fabric\ClusterSetup\DevClusterSetup.ps1"
+sfclean=@powershell -File "C:\Program Files\Microsoft SDKs\Service Fabric\ClusterSetup\CleanCluster.ps1"
+sfe="C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricExplorer\ServiceFabricExplorer.exe"
+vs="C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe" $*
