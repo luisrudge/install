@@ -20,3 +20,4 @@ sfstart=@powershell -File "C:\Program Files\Microsoft SDKs\Service Fabric\Cluste
 sfclean=@powershell -File "C:\Program Files\Microsoft SDKs\Service Fabric\ClusterSetup\CleanCluster.ps1"
 sfe="C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricExplorer\ServiceFabricExplorer.exe"
 vs="C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe" $*
+gcm=git checkout master
