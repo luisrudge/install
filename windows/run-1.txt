@@ -54,8 +54,8 @@ choco install IIS-ASPNET45 -source windowsfeatures
 New-Item -path "$env:APPDATA\npm" -type directory -force
 
 #install packages
-npm i -g bower generator-aspnet gulp http-server karma-cli npm-check-updates typescript webpack webpack-dev-server
-apm install atom-beautify pigments atom-save-all atom-yeoman bezier-curve-editor color-picker emmet jshint language-docker linter omnisharp-atom react tool-bar tool-bar-main editorconfig less-than-slash
+npm i -g bower generator-aspnet gulp http-server karma-cli npm-check-updates typescript webpack webpack-dev-server surge yo tsd
+apm install advanced-new-file atom-beautify atom-json-schema atom-save-all atom-typescript atom-yeoman bezier-curve-editor color-picker editorconfig emmet git-plus jshint json-schema keyboard-localization language-docker less-than-slash linter omnisharp-atom pigments react tool-bar tool-bar-main turbo-javascript
 
 #create git folder
 New-Item -path "C:\git" -type directory -force
