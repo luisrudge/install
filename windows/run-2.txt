@@ -1,7 +1,6 @@
 #apps
 choco install fiddler4
 choco install ccleaner
-choco install terminals
 choco install baretail
 choco install NugetPackageExplorer
 choco install vlc
@@ -9,13 +8,9 @@ choco install windirstat
 choco install linqpad4
 choco install paint.net
 choco install teamviewer
-choco install putty
-choco install SourceTree
 choco install imageresizerapp
-choco install skype
 choco install bulkrenameutility.install
 choco install grepWin
-choco install clipx
 choco install CloudBerryExplorer.AzureStorage
 choco install utorrent
 
