@@ -34,6 +34,7 @@ choco install atom
 choco install notepad2
 choco install 7zip.install
 choco install git.install
+choco install python2
 
 #extra
 choco install greenshot
@@ -49,6 +50,8 @@ choco install IIS-ISAPIFilter -source windowsfeatures
 choco install IIS-ISAPIExtensions -source windowsfeatures
 choco install IIS-NetFxExtensibility45 -source windowsfeatures
 choco install IIS-ASPNET45 -source windowsfeatures
+
+setx GYP_MSVS_VERSION 2015
 
 #fix npm bug
 New-Item -path "$env:APPDATA\npm" -type directory -force
