@@ -7,11 +7,9 @@ choco install vlc
 choco install windirstat
 choco install linqpad4
 choco install paint.net
-choco install teamviewer
 choco install imageresizerapp
 choco install bulkrenameutility.install
 choco install grepWin
-choco install CloudBerryExplorer.AzureStorage
 choco install utorrent
 
 Invoke-Reboot
