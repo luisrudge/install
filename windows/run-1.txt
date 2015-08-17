@@ -35,6 +35,7 @@ choco install notepad2
 choco install 7zip.install
 choco install git.install
 choco install python2
+choco install licecap
 
 #extra
 choco install greenshot
