@@ -5,7 +5,7 @@ boxstarter scripts to build my dev environment
 
 `ssh-keygen -t rsa -C "luis@luisrudge.net"`
 
-`cat .ssh\id_rsa.pub`
+`cat ~/.ssh/id_rsa.pub`
 
 https://github.com/settings/ssh
 
